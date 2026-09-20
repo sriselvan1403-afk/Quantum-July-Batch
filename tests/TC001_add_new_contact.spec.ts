@@ -17,7 +17,7 @@ test('Add New Contact and Verify', async ({ addContactDetailsPage, contactsLeads
     const excelData = excelReader.getRowByTestcase('contact', 'TC_ID', 'TC_001');
 
     const contactName = FakerData.getFirstName();
-    await addContactDetailsPage.enterName("Automate");
+    await addContactDetailsPage.enterName(contactName);
     await addContactDetailsPage.enterEmail(FakerData.getEmail());
     await addContactDetailsPage.enterPhoneNumber(excelData.PHONE_NUMBER);
     await addContactDetailsPage.enterCompany(FakerData.company());
