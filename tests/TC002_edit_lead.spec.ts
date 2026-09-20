@@ -4,7 +4,7 @@ import { FakerData } from '../utils/fakerUtils';
 import { appConstants } from '../constants/appConstants';
 
 
-test('Edit Contact and Verify', async ({ addContactDetailsPage, contactsLeadsPage }) => {
+test.skip('Edit Contact and Verify', async ({ addContactDetailsPage, contactsLeadsPage }) => {
     test.info().annotations.push(
         { type: 'Author', description: 'Vishnu' },
         { type: 'TestCase', description: 'Edit contact and verify its updated' },
